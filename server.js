@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname));
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY // We'll set this on Render dashboard
+  apiKey: process.env.OPENAI_API_KEY
 });
 const openai = new OpenAIApi(configuration);
 
